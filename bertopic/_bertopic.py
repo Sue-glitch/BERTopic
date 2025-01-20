@@ -4000,6 +4000,7 @@ class BERTopic:
             calculate_aspects=fine_tune_representation,
         )
         self._create_topic_vectors(documents=documents, embeddings=embeddings, mappings=mappings)
+        self.all_documents = documents
 
         if verbose:
             logger.info("Representation - Completed \u2713")
